@@ -41,14 +41,10 @@ return totalPrice
 }
 
 function removeFromCart(name) {
-    for(let i =0;i<cart.length;i++){
-      if(cart[i].itemName === name){
-           cart.splice(i,1)
-           return cart;
-      }else{
-        return "That item is not in your cart."
-      }
-    }
+  for(let i=0;i<cart.length;i++){
+    (cart[i].itemName === name)?(cart.splice(i,1):(return "That item is not in your cart."))
+  }
+
 }
 
 function placeOrder(cardNumber) {
