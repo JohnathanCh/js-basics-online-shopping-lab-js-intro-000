@@ -33,7 +33,6 @@ function viewCart() {
 }
 
 function total() {
-  console.log("Adfalfhs;fhk;aghflkadfhlkdhf")
 let totalPrice=0;
 for(let i =0;i<cart.length;i++){
   totalPrice += cart[i].itemPrice
@@ -46,7 +45,8 @@ for(let i =0;i<getCart().length;i++){
     if(getCart()[i].itemName === name){
         getCart().splice(i,1)
       }else{
-        return "That item is not in your cart."
+        var message = "That item is not in your cart."
+        return message
       }
     }
 }
