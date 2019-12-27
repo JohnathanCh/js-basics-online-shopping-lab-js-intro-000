@@ -43,7 +43,7 @@ return totalPrice
 function removeFromCart(name) {
 for(let i =0;i<getCart().length;i++){
     if(getCart()[i].itemName === name){
-        getCart().splice(i,2)
+        getCart().splice(2,1)
       }else{
         var message = "That item is not in your cart."
         return message
