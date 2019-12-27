@@ -33,6 +33,7 @@ function viewCart() {
 }
 
 function total() {
+  console.log("Adfalfhs;fhk;aghflkadfhlkdhf")
 let totalPrice=0;
 for(let i =0;i<cart.length;i++){
   totalPrice += cart[i].itemPrice
