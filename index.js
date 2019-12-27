@@ -41,7 +41,7 @@ return totalPrice
 }
 
 function removeFromCart(name) {
-for(let i =0;i<cart.length;i++){
+for(let i =0;i<getCart.length;i++){
     if(getCart()[i].itemName === name){
         getCart().splice(i,1)
       }else{
